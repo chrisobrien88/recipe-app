@@ -32,13 +32,7 @@ const CategoriesScreen = ({ navigation }) => {
   return (
     <FlatList
       data={CATEGORIES}
-      // the keyExtractor is used to extract the key from the data prop
-      // see the models folder for the Category model
       keyExtractor={(item) => item.id}
-      // renderItem is a function that returns a react component
-      // in renderItem, Flatlist will pass an object with the following properties: item, index, separators
-      // item is the item from the data prop using the id from the keyExtractor
-      // this is why the renderItem function does not need to accept any arguments, it is passed the itemData object (see above)
       renderItem={renderCategoryItem}
       numColumns={2}
     />
@@ -46,3 +40,28 @@ const CategoriesScreen = ({ navigation }) => {
 };
 
 export default CategoriesScreen;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// the keyExtractor is used to extract the key from the data prop
+      // see the models folder for the Category model
+
+
+ // renderItem is a function that returns a react component
+      // in renderItem, Flatlist will pass an object with the following properties: item, index, separators
+      // item is the item from the data prop using the id from the keyExtractor
+      // this is why the renderItem function does not need to accept any arguments, it is passed the itemData object (see above)

@@ -29,10 +29,7 @@ const MealItem = ({
     <View style={styles.mealItem}>
       <Pressable
         android_ripple={{ color: "#9a9898" }}
-        style={({ pressed }) => [
-          styles.buttonStyle,
-          pressed ? styles.buttonPressed : null,
-        ]}
+        style={({ pressed }) => (pressed ? styles.buttonPressed : null)}
         // onPress={handlePress}
       >
         <View>
@@ -57,8 +54,12 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     overflow: "hidden",
     backgroundColor: "#ffffff",
+    elevation: 3,
+    shadowColor: "black",
+    shadowOpacity: 0.26,
+    shadowOffset: { width: 0, height: 2 },
+    shadowRadius: 10,
   },
-
   title: {
     fontWeight: "bold",
     fontSize: 18,
@@ -78,9 +79,6 @@ const styles = StyleSheet.create({
   detailItem: {
     marginHorizontal: 4,
     fontSize: 12,
-  },
-  buttonStyle: {
-    flex: 1,
   },
   buttonPressed: {
     opacity: 0.5,
