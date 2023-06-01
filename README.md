@@ -1,6 +1,6 @@
 # Recipe Lookup App
 
-This is a simple React Native app built using Expo that allows users to search and browse through a collection of recipes. It serves as a learning project to familiarize oneself with the basics of React Native.
+This is a simple React Native app built using React Native and Expo that allows users to search and browse through a collection of recipes. It serves as a learning project to familiarize myself with the basics of React Native.
 
 ## Features
 
