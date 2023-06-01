@@ -22,24 +22,18 @@ Make sure you have the following installed before running the app:
 
 1. Clone the repository:
 <pre>
-```javascript
 git clone https://github.com/chrisobrien88/recipe-app.git
-```
 </pre>
 
 2. Navigate to the project directory:
 cd recipe-lookup-app
 <pre>
-```javascript
 npm install
-```
 </pre>
 
 4. Start the Expo development server:
 <pre>
-```javascript
 expo start
-```
 </pre>
 
 5. Scan the QR code displayed in the terminal using the Expo Go app on your mobile device, or click on the provided options to open the app in an Android or iOS emulator.
